@@ -1,1 +1,1 @@
-# flip-cart-clone-mern-app
+# flip-cart-clone-simple-mern-app
