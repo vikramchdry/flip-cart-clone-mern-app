@@ -4,7 +4,7 @@ const express = require('express');
 const connectDB = require('./config/db');
 
 
-const userRouters = require('./routers/user');
+const authRouters = require('./routers/auth');
 
 connectDB();
 
@@ -16,7 +16,7 @@ const app = express();
 //middleware 
 
 app.use(express.json());
-app.use('/api', userRouters);
+app.use('/api', authRouters);
 
 
 
