@@ -5,6 +5,8 @@ const connectDB = require('./config/db');
 
 
 const authRouters = require('./routers/auth');
+const adminRouters = require('./routers/admin/auth');
+
 
 connectDB();
 
@@ -17,6 +19,7 @@ const app = express();
 
 app.use(express.json());
 app.use('/api', authRouters);
+app.use('/api', adminRouters);
 
 
 
